@@ -1,336 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade — Match Time Pro</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #f4f6f8;
-      color: #1a1a2e;
-      line-height: 1.75;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1b5e20, #2e7d32);
-      color: #fff;
-      padding: 48px 24px 36px;
-      text-align: center;
-    }
-    header .logo { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.5px; }
-    header .logo span { color: #a5d6a7; }
-    header p { margin-top: 8px; font-size: 0.95rem; opacity: 0.85; }
-
-    .lang-bar {
-      background: #fff;
-      border-bottom: 1px solid #e0e0e0;
-      text-align: center;
-      padding: 10px;
-      font-size: 0.875rem;
-    }
-    .lang-bar a {
-      color: #2e7d32;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .lang-bar a:hover { text-decoration: underline; }
-
-    main {
-      max-width: 820px;
-      margin: 40px auto;
-      padding: 0 20px 60px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 36px 40px;
-      margin-bottom: 24px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
-
-    .meta-block {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 32px;
-    }
-    .meta-pill {
-      background: #e8f5e9;
-      color: #1b5e20;
-      border-radius: 999px;
-      padding: 4px 14px;
-      font-size: 0.82rem;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #1b5e20;
-      border-left: 4px solid #2e7d32;
-      padding-left: 12px;
-      margin-bottom: 16px;
-    }
-    h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #333;
-      margin: 18px 0 8px;
-    }
-    p { margin-bottom: 12px; color: #444; font-size: 0.95rem; }
-
-    ul, ol { margin: 8px 0 12px 20px; color: #444; font-size: 0.95rem; }
-    li { margin-bottom: 6px; }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-      margin-top: 10px;
-    }
-    th {
-      background: #e8f5e9;
-      color: #1b5e20;
-      font-weight: 700;
-      text-align: left;
-      padding: 10px 14px;
-    }
-    td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
-    tr:last-child td { border-bottom: none; }
-    tr:nth-child(even) td { background: #fafafa; }
-
-    .highlight {
-      background: #fff9c4;
-      border-left: 4px solid #f9a825;
-      border-radius: 0 8px 8px 0;
-      padding: 14px 18px;
-      margin: 16px 0;
-      font-size: 0.9rem;
-      color: #5d4037;
-    }
-
-    .no-collect {
-      background: #e8f5e9;
-      border-left: 4px solid #43a047;
-      border-radius: 0 8px 8px 0;
-      padding: 14px 18px;
-      margin: 16px 0;
-      font-size: 0.9rem;
-      color: #1b5e20;
-    }
-
-    .contact-box {
-      background: #e3f2fd;
-      border-radius: 10px;
-      padding: 20px 24px;
-      margin-top: 12px;
-    }
-    .contact-box p { color: #0d47a1; margin-bottom: 4px; }
-
-    footer {
-      text-align: center;
-      padding: 24px;
-      font-size: 0.82rem;
-      color: #888;
-    }
-
-    @media (max-width: 600px) {
-      .card { padding: 24px 20px; }
-      header .logo { font-size: 1.8rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Match Time Pro</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 820px; margin: 40px auto; padding: 20px; line-height: 1.65; color: #333; }
+  h1 { color: #1a5e1a; border-bottom: 3px solid #1a5e1a; padding-bottom: 10px; }
+  h2 { color: #1a5e1a; margin-top: 30px; }
+  h3 { color: #2a7e2a; margin-top: 20px; }
+  a { color: #1a5e1a; }
+  table { border-collapse: collapse; width: 100%; margin: 15px 0; font-size: 0.93em; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f0f7f0; }
+  .updated { color: #666; font-style: italic; font-size: 0.9em; }
+  ul { padding-left: 25px; }
+  hr { margin: 40px 0; border: 0; border-top: 1px solid #ddd; }
+  .lang-switch { text-align: right; font-size: 0.9em; margin-bottom: 10px; }
+</style>
 </head>
 <body>
 
-<header>
-  <div class="logo">Match Time <span>Pro</span></div>
-  <p>Pol&#237;tica de Privacidade</p>
-</header>
-
-<div class="lang-bar">
-  &#127463;&#127479; Portugu&#234;s (atual) &nbsp;|&nbsp;
-  <a href="privacy_policy_en.html">&#127482;&#127480; English version</a>
+<div class="lang-switch">
+🇧🇷 Português (atual) | <a href="privacy_policy_en.html">🇺🇸 English version</a>
 </div>
 
-<main>
+<h1>Match Time Pro</h1>
+<h2 style="border:none; margin-top:0;">Política de Privacidade</h2>
 
-  <div class="card">
-    <div class="meta-block">
-      <span class="meta-pill">&#128197; Vig&#234;ncia: Abril de 2026</span>
-      <span class="meta-pill">&#128241; App: Match Time Pro</span>
-      <span class="meta-pill">&#127463;&#127479; Desenvolvedor: Brasil</span>
-    </div>
-    <p>
-      Esta Pol&#237;tica de Privacidade descreve como o aplicativo <strong>Match Time Pro</strong>
-      coleta, utiliza e protege as informa&#231;&#245;es dos seus usu&#225;rios. Ao usar o aplicativo,
-      voc&#234; concorda com os termos descritos neste documento.
-    </p>
-    <p>
-      Levamos a privacidade muito a s&#233;rio. O Match Time Pro foi projetado para funcionar
-      com o <em>m&#237;nimo de dados pessoais poss&#237;vel</em>, sendo a maioria das funcionalidades
-      dispon&#237;vel sem qualquer cadastro.
-    </p>
-  </div>
+<p class="updated">📅 Vigência: Abril de 2026<br>📱 App: Match Time Pro<br>🇧🇷 Desenvolvedor: Brasil</p>
 
-  <div class="card">
-    <h2>1. Respons&#225;vel pelo Aplicativo</h2>
-    <p>O Match Time Pro &#233; desenvolvido e mantido por:</p>
-    <div class="contact-box">
-      <p><strong>Desenvolvedor:</strong> Claudio Ventura</p>
-      <p><strong>E-mail de contato:</strong> claudiovasco789@gmail.com</p>
-      <p><strong>Pa&#237;s:</strong> Brasil</p>
-    </div>
-  </div>
+<p>Esta Política de Privacidade descreve como o aplicativo <strong>Match Time Pro</strong> coleta, utiliza e protege as informações dos seus usuários. Ao usar o aplicativo, você concorda com os termos descritos neste documento.</p>
 
-  <div class="card">
-    <h2>2. Dados Coletados</h2>
-    <p>A tabela abaixo resume <strong>todos</strong> os dados que o aplicativo pode coletar ou acessar.</p>
+<p>Levamos a privacidade muito a sério. O Match Time Pro foi projetado para funcionar com o <em>mínimo de dados pessoais possível</em>, sendo a maioria das funcionalidades disponível sem qualquer cadastro.</p>
 
-    <h3>2.1 Dados fornecidos voluntariamente (login opcional)</h3>
-    <p>O login &#233; <strong>completamente opcional</strong>. O aplicativo funciona em sua totalidade sem cadastro.</p>
-    <table>
-      <thead><tr><th>Dado</th><th>Origem</th><th>Finalidade</th></tr></thead>
-      <tbody>
-        <tr><td>Endere&#231;o de e-mail</td><td>Cadastro ou login com Google</td><td>Identificar a conta no Firebase Authentication</td></tr>
-        <tr><td>Nome de exibi&#231;&#227;o</td><td>Login com Google (opcional)</td><td>Personalizar a tela de perfil</td></tr>
-        <tr><td>Foto de perfil (URL)</td><td>Login com Google (opcional)</td><td>Exibir o avatar na interface</td></tr>
-      </tbody>
-    </table>
+<h2>1. Responsável pelo Aplicativo</h2>
 
-    <h3>2.2 Dados coletados automaticamente</h3>
-    <table>
-      <thead><tr><th>Dado</th><th>Origem</th><th>Finalidade</th></tr></thead>
-      <tbody>
-        <tr><td>Token de dispositivo (FCM Token)</td><td>Firebase Cloud Messaging</td><td>Enviar notifica&#231;&#245;es sobre jogos e resultados</td></tr>
-        <tr><td>Identificador de publicidade (Ad ID)</td><td>Google AdMob</td><td>Exibir an&#250;ncios personalizados ou n&#227;o personalizados</td></tr>
-        <tr><td>Dados de intera&#231;&#227;o com an&#250;ncios</td><td>Google AdMob SDK</td><td>Medir efic&#225;cia dos an&#250;ncios (gerenciado pelo Google)</td></tr>
-        <tr><td>Dados de uso e diagn&#243;stico</td><td>Firebase Analytics</td><td>Melhorar a experi&#234;ncia do aplicativo</td></tr>
-      </tbody>
-    </table>
+<p>O Match Time Pro é desenvolvido e mantido por:</p>
+<ul>
+  <li><strong>Desenvolvedor:</strong> Claudio Ventura</li>
+  <li><strong>E-mail de contato:</strong> <a href="mailto:claudiovasco789@gmail.com">claudiovasco789@gmail.com</a></li>
+  <li><strong>País:</strong> Brasil</li>
+</ul>
 
-    <h3>2.3 Dados armazenados localmente no dispositivo</h3>
-    <p>Estes dados ficam <strong>exclusivamente no dispositivo</strong> e jamais s&#227;o transmitidos externamente.</p>
-    <table>
-      <thead><tr><th>Dado</th><th>Tecnologia</th><th>Finalidade</th></tr></thead>
-      <tbody>
-        <tr><td>Times e ligas favoritos</td><td>Room Database (local)</td><td>Personalizar conte&#250;do e notifica&#231;&#245;es</td></tr>
-        <tr><td>Cache de partidas e classifica&#231;&#245;es</td><td>Room Database (local)</td><td>Permitir uso offline e reduzir consumo de dados</td></tr>
-        <tr><td>Prefer&#234;ncias: idioma, tema, cor</td><td>DataStore (local)</td><td>Manter configura&#231;&#245;es personalizadas</td></tr>
-      </tbody>
-    </table>
+<h2>2. Dados Coletados</h2>
 
-    <div class="no-collect">
-      &#9989; <strong>O aplicativo N&#195;O coleta:</strong> localiza&#231;&#227;o geogr&#225;fica, contatos, fotos, c&#226;mera,
-      microfone, dados de sa&#250;de, dados financeiros, hist&#243;rico de navega&#231;&#227;o externo ou qualquer dado sens&#237;vel.
-    </div>
-  </div>
+<p>A tabela abaixo resume <strong>todos</strong> os dados que o aplicativo pode coletar ou acessar.</p>
 
-  <div class="card">
-    <h2>3. Como Utilizamos os Dados</h2>
-    <ul>
-      <li><strong>Autentica&#231;&#227;o:</strong> dados de conta usados exclusivamente para identificar o usu&#225;rio logado.</li>
-      <li><strong>Notifica&#231;&#245;es push:</strong> token FCM usado para alertas de in&#237;cio de partida, gols e resultados.</li>
-      <li><strong>Publicidade:</strong> AdMob usa o identificador de publicidade para exibir an&#250;ncios relevantes. Pode ser desativado nas configura&#231;&#245;es do Android.</li>
-      <li><strong>Analytics:</strong> dados agregados e anonimizados para identificar falhas e melhorar o app.</li>
-      <li><strong>Dados locais:</strong> times favoritos e prefer&#234;ncias permanecem no dispositivo para personalizar a experi&#234;ncia.</li>
-    </ul>
-    <div class="highlight">
-      &#9888;&#65039; O Match Time Pro <strong>n&#227;o vende, aluga nem compartilha</strong> dados pessoais com terceiros para fins comerciais pr&#243;prios.
-    </div>
-  </div>
+<h3>2.1 Dados fornecidos voluntariamente (login opcional)</h3>
 
-  <div class="card">
-    <h2>4. Servi&#231;os de Terceiros</h2>
-    <p>O aplicativo integra servi&#231;os de terceiros com pol&#237;ticas de privacidade pr&#243;prias.</p>
+<p>O login é <strong>completamente opcional</strong>. O aplicativo funciona em sua totalidade sem cadastro.</p>
 
-    <h3>Google Firebase (Authentication, Cloud Messaging, Analytics)</h3>
-    <p>Pol&#237;tica: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></p>
+<table>
+<tr><th>Dado</th><th>Origem</th><th>Finalidade</th></tr>
+<tr><td>Endereço de e-mail</td><td>Login com Google (opcional)</td><td>Identificar a conta no Firebase Authentication</td></tr>
+<tr><td>Nome de exibição</td><td>Login com Google (opcional)</td><td>Personalizar a tela de perfil</td></tr>
+<tr><td>Foto de perfil (URL)</td><td>Login com Google (opcional)</td><td>Exibir o avatar na interface</td></tr>
+</table>
 
-    <h3>Google AdMob</h3>
-    <p>
-      Pode coletar o identificador de publicidade para exibir an&#250;ncios personalizados.
-      Pol&#237;tica: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a><br>
-      Para desativar: <strong>Configura&#231;&#245;es Android &#8594; Google &#8594; An&#250;ncios &#8594; Desativar personaliza&#231;&#227;o</strong>.
-    </p>
+<h3>2.2 Dados coletados automaticamente</h3>
 
-    <h3>API-Football (API Sports)</h3>
-    <p>Fornece dados de partidas. O app envia apenas par&#226;metros de consulta. Nenhum dado pessoal &#233; transmitido.
-      <a href="https://www.api-football.com/contact" target="_blank" rel="noopener">api-football.com</a></p>
+<table>
+<tr><th>Dado</th><th>Origem</th><th>Finalidade</th></tr>
+<tr><td>Token de dispositivo (FCM Token)</td><td>Firebase Cloud Messaging</td><td>Enviar notificações sobre jogos e resultados</td></tr>
+<tr><td>Identificador de publicidade (Ad ID)</td><td>Google AdMob</td><td>Exibir anúncios personalizados ou não personalizados</td></tr>
+<tr><td>Dados de interação com anúncios</td><td>Google AdMob SDK</td><td>Medir eficácia dos anúncios (gerenciado pelo Google)</td></tr>
+<tr><td>Dados de uso e diagnóstico</td><td>Firebase Analytics</td><td>Melhorar a experiência do aplicativo</td></tr>
+</table>
 
-    <h3>GNews API</h3>
-    <p>Fornece not&#237;cias de futebol. O app envia apenas termos de busca. Nenhum dado pessoal &#233; transmitido.
-      <a href="https://gnews.io/privacy-policy" target="_blank" rel="noopener">gnews.io/privacy-policy</a></p>
-  </div>
+<h3>2.3 Dados armazenados localmente no dispositivo</h3>
 
-  <div class="card">
-    <h2>5. Reten&#231;&#227;o e Exclus&#227;o de Dados</h2>
-    <ul>
-      <li><strong>Conta Firebase:</strong> mantida enquanto ativa. O usu&#225;rio pode excluir a conta em Configura&#231;&#245;es &#8594; Conta &#8594; Excluir conta.</li>
-      <li><strong>Token FCM:</strong> renovado periodicamente pelo sistema, sem v&#237;nculo com dados identificáveis.</li>
-      <li><strong>Dados locais:</strong> apagados ao desinstalar o aplicativo.</li>
-      <li><strong>AdMob e Analytics:</strong> gerenciados pelo Google conforme suas pol&#237;ticas de reten&#231;&#227;o.</li>
-    </ul>
-  </div>
+<p>Estes dados ficam <strong>exclusivamente no dispositivo</strong> e jamais são transmitidos externamente.</p>
 
-  <div class="card">
-    <h2>6. Direitos do Usu&#225;rio (LGPD)</h2>
-    <p>Em conformidade com a <strong>Lei Geral de Prote&#231;&#227;o de Dados (Lei n&#186; 13.709/2018)</strong>, voc&#234; tem direito a:</p>
-    <ul>
-      <li><strong>Acesso:</strong> saber quais dados temos sobre voc&#234;.</li>
-      <li><strong>Corre&#231;&#227;o:</strong> corrigir dados incompletos ou incorretos.</li>
-      <li><strong>Exclus&#227;o:</strong> solicitar a exclus&#227;o dos seus dados pessoais.</li>
-      <li><strong>Revoga&#231;&#227;o de consentimento:</strong> retirar o consentimento a qualquer momento.</li>
-      <li><strong>Portabilidade:</strong> solicitar seus dados em formato leg&#237;vel por m&#225;quina.</li>
-      <li><strong>Informa&#231;&#227;o sobre compartilhamento:</strong> saber com quais entidades seus dados s&#227;o compartilhados.</li>
-    </ul>
-    <p>Para exercer esses direitos, entre em contato pelo e-mail da Se&#231;&#227;o 1.</p>
-  </div>
+<table>
+<tr><th>Dado</th><th>Tecnologia</th><th>Finalidade</th></tr>
+<tr><td>Times e ligas favoritos</td><td>Room Database (local)</td><td>Personalizar conteúdo e notificações</td></tr>
+<tr><td>Cache de partidas e classificações</td><td>Room Database (local)</td><td>Permitir uso offline e reduzir consumo de dados</td></tr>
+<tr><td>Histórico de times pesquisados (até 10)</td><td>DataStore (local)</td><td>Acelerar acesso a times consultados recentemente na aba Análise</td></tr>
+<tr><td>Preferências: idioma, tema e cor</td><td>DataStore (local)</td><td>Manter configurações personalizadas</td></tr>
+</table>
 
-  <div class="card">
-    <h2>7. Uso por Crian&#231;as</h2>
-    <p>O Match Time Pro <strong>n&#227;o &#233; direcionado a crian&#231;as menores de 13 anos</strong> e n&#227;o coleta intencionalmente dados de menores. Caso identifiquemos tal situa&#231;&#227;o, os dados ser&#227;o removidos imediatamente.</p>
-  </div>
+<p>✅ <strong>O aplicativo NÃO coleta:</strong> localização geográfica, contatos, fotos, câmera, microfone, dados de saúde, dados financeiros, histórico de navegação externo ou qualquer dado sensível.</p>
 
-  <div class="card">
-    <h2>8. Seguran&#231;a dos Dados</h2>
-    <ul>
-      <li>Comunica&#231;&#227;o com APIs externas via <strong>HTTPS/TLS</strong>.</li>
-      <li>Autentica&#231;&#227;o gerenciada pelo <strong>Firebase Authentication</strong>.</li>
-      <li>Dados locais no <strong>armazenamento privado</strong> do aplicativo.</li>
-      <li>Nenhuma senha armazenada pelo desenvolvedor.</li>
-    </ul>
-  </div>
+<h2>3. Como Utilizamos os Dados</h2>
 
-  <div class="card">
-    <h2>9. Altera&#231;&#245;es nesta Pol&#237;tica</h2>
-    <p>Esta pol&#237;tica pode ser atualizada periodicamente. Altera&#231;&#245;es significativas ser&#227;o comunicadas via notifica&#231;&#227;o no app ou por e-mail. O uso continuado ap&#243;s altera&#231;&#245;es constitui aceita&#231;&#227;o dos novos termos.</p>
-  </div>
+<ul>
+  <li><strong>Autenticação:</strong> dados de conta usados exclusivamente para identificar o usuário logado.</li>
+  <li><strong>Notificações push:</strong> token FCM usado para alertas de início de partida, gols, cartões e fim de jogo.</li>
+  <li><strong>Publicidade:</strong> AdMob usa o identificador de publicidade para exibir anúncios relevantes. Pode ser desativado nas configurações do Android.</li>
+  <li><strong>Analytics:</strong> dados agregados e anonimizados para identificar falhas e melhorar o app.</li>
+  <li><strong>Dados locais:</strong> times favoritos, histórico de pesquisa e preferências permanecem no dispositivo para personalizar a experiência.</li>
+</ul>
 
-  <div class="card">
-    <h2>10. Contato</h2>
-    <div class="contact-box">
-      <p><strong>Respons&#225;vel:</strong> Claudio [sobrenome a preencher]</p>
-      <p><strong>E-mail:</strong> [email a preencher]</p>
-      <p><strong>Prazo de resposta:</strong> at&#233; 15 dias &#250;teis</p>
-    </div>
-    <p style="margin-top:16px;">
-      Voc&#234; tamb&#233;m pode registrar reclama&#231;&#245;es perante a <strong>ANPD</strong>:
-      <a href="https://www.gov.br/anpd" target="_blank" rel="noopener">www.gov.br/anpd</a>
-    </p>
-  </div>
+<p>⚠️ O Match Time Pro <strong>não vende, aluga nem compartilha</strong> dados pessoais com terceiros para fins comerciais próprios.</p>
 
-</main>
+<h2>4. Serviços de Terceiros</h2>
 
-<footer>
-  <p>&#169; 2026 Match Time Pro &#183; Todos os direitos reservados</p>
-  <p style="margin-top:6px;">
-    <a href="privacy_policy_en.html" style="color:#2e7d32;text-decoration:none;">&#127482;&#127480; English version</a>
-  </p>
-</footer>
+<p>O aplicativo integra serviços de terceiros com políticas de privacidade próprias.</p>
+
+<h3>Google Firebase (Authentication, Cloud Messaging, Analytics)</h3>
+<p>Política: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
+
+<h3>Google AdMob</h3>
+<p>Pode coletar o identificador de publicidade para exibir anúncios personalizados.<br>
+Política: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a><br>
+Para desativar: <strong>Configurações Android → Google → Anúncios → Desativar personalização</strong>.</p>
+
+<h3>API-Football (API Sports)</h3>
+<p>Fornece dados de partidas. As requisições passam pelo nosso servidor intermediário, que envia apenas parâmetros de consulta (IDs de time, liga, temporada). Nenhum dado pessoal do usuário é transmitido.<br>
+<a href="https://www.api-football.com/contact" target="_blank">api-football.com</a></p>
+
+<h3>GNews API</h3>
+<p>Fornece notícias de futebol. As requisições passam pelo nosso servidor intermediário, que envia apenas termos de busca. Nenhum dado pessoal do usuário é transmitido.<br>
+<a href="https://gnews.io/privacy-policy" target="_blank">gnews.io/privacy-policy</a></p>
+
+<h3>Servidor intermediário (backend)</h3>
+<p>O Match Time Pro utiliza um servidor próprio que faz cache das informações esportivas, evitando chamadas redundantes às APIs externas. O servidor armazena apenas o token FCM (para envio de notificações) e dados públicos de partidas. Não armazena dados pessoais identificáveis.</p>
+
+<h2>5. Retenção e Exclusão de Dados</h2>
+
+<ul>
+  <li><strong>Conta Firebase:</strong> mantida enquanto ativa. O usuário pode excluir a conta em Configurações → Conta → Excluir conta.</li>
+  <li><strong>Token FCM:</strong> renovado periodicamente pelo sistema, sem vínculo com dados identificáveis. Tokens inválidos são removidos automaticamente do servidor.</li>
+  <li><strong>Dados locais:</strong> apagados ao desinstalar o aplicativo.</li>
+  <li><strong>AdMob e Analytics:</strong> gerenciados pelo Google conforme suas políticas de retenção.</li>
+</ul>
+
+<h2>6. Direitos do Usuário (LGPD)</h2>
+
+<p>Em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018)</strong>, você tem direito a:</p>
+
+<ul>
+  <li><strong>Acesso:</strong> saber quais dados temos sobre você.</li>
+  <li><strong>Correção:</strong> corrigir dados incompletos ou incorretos.</li>
+  <li><strong>Exclusão:</strong> solicitar a exclusão dos seus dados pessoais.</li>
+  <li><strong>Revogação de consentimento:</strong> retirar o consentimento a qualquer momento.</li>
+  <li><strong>Portabilidade:</strong> solicitar seus dados em formato legível por máquina.</li>
+  <li><strong>Informação sobre compartilhamento:</strong> saber com quais entidades seus dados são compartilhados.</li>
+</ul>
+
+<p>Para exercer esses direitos, entre em contato pelo e-mail da Seção 1.</p>
+
+<h2>7. Uso por Crianças</h2>
+
+<p>O Match Time Pro <strong>não é direcionado a crianças menores de 13 anos</strong> e não coleta intencionalmente dados de menores. Caso identifiquemos tal situação, os dados serão removidos imediatamente.</p>
+
+<h2>8. Segurança dos Dados</h2>
+
+<ul>
+  <li>Comunicação com APIs externas via <strong>HTTPS/TLS</strong>.</li>
+  <li>Autenticação gerenciada pelo <strong>Firebase Authentication</strong>.</li>
+  <li>Dados locais no <strong>armazenamento privado</strong> do aplicativo.</li>
+  <li>Nenhuma senha armazenada pelo desenvolvedor.</li>
+</ul>
+
+<h2>9. Alterações nesta Política</h2>
+
+<p>Esta política pode ser atualizada periodicamente. Alterações significativas serão comunicadas via notificação no app ou por e-mail. O uso continuado após alterações constitui aceitação dos novos termos.</p>
+
+<h2>10. Contato</h2>
+
+<ul>
+  <li><strong>Responsável:</strong> Claudio Ventura</li>
+  <li><strong>E-mail:</strong> <a href="mailto:claudiovasco789@gmail.com">claudiovasco789@gmail.com</a></li>
+  <li><strong>Prazo de resposta:</strong> até 15 dias úteis</li>
+</ul>
+
+<p>Você também pode registrar reclamações perante a <strong>ANPD</strong>:<br>
+<a href="https://www.gov.br/anpd" target="_blank">www.gov.br/anpd</a></p>
+
+<hr>
+
+<p style="text-align: center; color: #888; font-size: 0.85em;">
+© 2026 Match Time Pro · Todos os direitos reservados
+</p>
+
+<div class="lang-switch">
+<a href="privacy_policy_en.html">🇺🇸 English version</a>
+</div>
 
 </body>
 </html>
